@@ -1,3 +1,55 @@
+# Sui Attestation Service
+
+A decentralized attestation infrastructure built on the Sui blockchain, enabling verifiable claims and credentials in a trustless environment.
+
+## What is Sui Attestation Service?
+
+Sui Attestation Service (SAS) is a protocol for creating, managing, and verifying claims (attestations) on the Sui blockchain. Inspired by Ethereum Attestation Service (EAS), it provides a flexible and extensible framework for on-chain verification of information.
+
+At its core, SAS allows any entity to:
+
+1. Define schemas for structured attestations
+2. Create verifiable attestations about subjects (addresses or objects)
+3. Verify and query attestations using efficient indexing
+4. Manage attestation lifecycles including revocation
+
+## Why Use Attestations?
+
+Attestations serve as the backbone for trust in decentralized systems. They enable verifiable claims about entities without requiring central authorities. Use cases include:
+
+- KYC/AML verifications
+- Educational credentials and certifications
+- Reputation systems
+- Governance participation rights
+- Credit scoring and financial attestations
+- Identity verification
+
+## Architecture
+
+SAS consists of several core components:
+
+- **SchemaRegistry**: Stores definitions of attestation formats
+- **Attestations**: Verifiable claims about subjects following specific schemas
+- **Permission System**: Controls who can create schemas and attestations
+- **Indexing System**: Enables efficient querying of attestations by subject or schema
+
+## Features
+
+- Schema-based attestation structure
+- Granular permission controls
+- Efficient attestation indexing and querying
+- Revocation support
+- Extensible data model using JSON
+
+## Deployment
+
+This project has been deployed to the Sui testnet with the following objects:
+
+- Package ID: 0xb1f0f64794352052cc97efd38d09c169f4b61bcbce174d6fe9a4d0058b4e53b0
+- SchemaRegistry: 0xb25dd2110807bac4ec32d518a181b9ffdaee5f318d674f1f4e19a80a4df9fa96
+- SubjectIndex: 0x07e861d3d5d1840b7bcea553e687f1afa1dcbee1f38394b187113ad7c9d14500
+- SchemaIndex: 0x205d4400e98c59028ab0c0f30e77ca1a0d677982d932ad48ce8b6afcbf08d798
+
 # Sui Attestation Service Deployment and Testing Guide
 
 ## Building the Project
